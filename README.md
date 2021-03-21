@@ -6,7 +6,7 @@ This project is for the class AP computer science.
 
 ## Idea:
 
-My idea is to make a game sort of like the tank game on WiiPlay on the Nintendo Wii. Except it will use cars and you can pick characters and courses.
+It was hard for me to come up with something to do for this project, so I kind of just made a bunch of calculators/convertors in the form of GUI's.
 
 ![projectidea](https://github.com/jonathanwidmer/2020programming2Project/blob/main/projectidea.PNG?raw=true)
 ## Documentation
