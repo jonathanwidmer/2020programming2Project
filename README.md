@@ -12,3 +12,4 @@ It was hard for me to come up with something to do for this project, so I kind o
 ## Documentation
 1. Video or pictures project working
 ![projectrunning](https://github.com/jonathanwidmer/2020programming2Project/blob/main/projectrunning.mp4?raw=true)
+![src](https://github.com/jonathanwidmer/2020programming2Project/blob/main/src/classselection.JPG?raw=true)
