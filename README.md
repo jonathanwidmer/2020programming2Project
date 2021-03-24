@@ -11,3 +11,4 @@ It was hard for me to come up with something to do for this project, so I kind o
 ![projectidea](https://github.com/jonathanwidmer/2020programming2Project/blob/main/projectuml.png?raw=true)
 ## Documentation
 1. Video or pictures project working
+![projectrunning](https://github.com/jonathanwidmer/2020programming2Project/blob/main/projectrunning.webm?raw=true)
