@@ -44,7 +44,7 @@ public class MusicFrame extends JFrame{
   Clip clip = AudioSystem.getClip();
   clip.open(audioStream);
 /**
-button logic (lines 49 - 100) music takes a couple seconds to start playing, song is Confutatis Maledictis from Mozart Requiem, if you upload your own file, make sure it is 16 bit 44100 KHz
+button logic (lines 49 - 100) music takes a couple seconds to start playing, song is Confutatis Maledictis from Mozart Requiem, if you upload your own file, make sure it is 16 bit 44100 KHz and also a .wav file
 */
   class AddMusicPlayer implements ActionListener{
     public void actionPerformed(ActionEvent event){
