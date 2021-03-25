@@ -12,7 +12,7 @@ It was hard for me to come up with something to do for this project, so I kind o
 ## Documentation
 1. Video and pictures of project working
 ![projectrunning](https://github.com/jonathanwidmer/2020programming2Project/blob/main/projectrunning.mp4?raw=true)
-The link above is a video of it running.
+<---- video of project working.
 ![src](https://github.com/jonathanwidmer/2020programming2Project/blob/main/src/classselection.JPG?raw=true)
 ![src](https://github.com/jonathanwidmer/2020programming2Project/blob/main/src/bmicalculator.JPG?raw=true)
 ![src](https://github.com/jonathanwidmer/2020programming2Project/blob/main/src/distanceconverter.JPG?raw=true)
