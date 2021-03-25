@@ -1,5 +1,5 @@
 /**
-a class for viewing all classes, uses logic from ALlClassesFrame
+a class for viewing all classes, uses logic from AllClassesFrame
 @param a button click
 @return going to that class
 */
