@@ -65,7 +65,6 @@ makes allclasses object
   }
   /**
   creates text field to enter a number into
-  @param user entered number in lbs
   */
   public void createTextField(){
     weightLabel = new JLabel("weight in lbs: ");
@@ -75,7 +74,6 @@ makes allclasses object
   }
   /**
   creates another text field to enter a number into
-  @param user entered number in inches
   */
   public void createTextField1(){
     heightLabel = new JLabel("height in inches: ");
@@ -123,8 +121,6 @@ makes allclasses object
   }
 /**
 creates button to calculate BMI
-@param button click
-@return BMI
 */
   public void createButton(){
     button = new JButton("find your bmi");
@@ -133,8 +129,6 @@ creates button to calculate BMI
   }
 /**
 creates button to go back
-@param button click
-@return AllClassesViewer
 */
   public void goBack(){
     back = new JButton("go back");
@@ -144,7 +138,6 @@ creates button to go back
 
   /**
   creates visible panel for viewing buttons, text fields, and labels
-  @return visible BMIFrame
   */
   public void createPanel(){
     JPanel panel = new JPanel();
