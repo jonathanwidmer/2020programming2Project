@@ -12,7 +12,7 @@ It was hard for me to come up with something to do for this project, so I kind o
 All source code, pictures and videos of project running, and the sound file are in the src directory. Below are pictures and a video of the project running.
 
 ## Year 2 concepts in this project:
-Recursion is used on the FibonacciFrame.java file in order to find the value of that number in the Fibonacci Sequence. GUI controls like buttons and text fields are used throughout the whole project. An interface is used to supply common methods to the different classes. And the MusicFrame/ Music Player uses file i/o and exception handling.
+1. Recursion is used on the FibonacciFrame.java file in order to find the value of that number in the Fibonacci Sequence. 2. GUI controls like buttons and text fields are used throughout the whole project. 3. An interface is used to supply common methods to the different classes. 4. And the MusicFrame/ Music Player uses file i/o and exception handling.
 
 ![projectidea](https://github.com/jonathanwidmer/2020programming2Project/blob/main/projectuml.png?raw=true)
 ## Documentation
