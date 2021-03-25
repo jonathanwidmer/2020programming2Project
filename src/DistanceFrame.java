@@ -80,13 +80,19 @@ button logic (lines 65 - 92)
       allclassesframe.setVisible(true);
     }
   }
-
+/**
+@param button click
+@return distance in feet
+*/
   public void createButton(){
     button = new JButton("Convert miles to feet");
     ActionListener listener = new AddDistanceListener();
     button.addActionListener(listener);
   }
-
+/**
+@param button click
+@return AllClassesViewer
+*/
   public void goBack(){
     back = new JButton("go back");
     ActionListener listener = new GoBack();
