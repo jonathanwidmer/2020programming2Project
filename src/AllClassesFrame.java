@@ -20,31 +20,41 @@ public class AllClassesFrame extends JFrame{
 references to other classes
 */
   private WeightFrame weightframe;
-
+/**
+makes weight frame object
+*/
   public void setWeightFrame(WeightFrame weightframe) {
     this.weightframe = weightframe;
     }
 
   private DistanceFrame distanceframe;
-
+/**
+makes distance frame object
+*/
   public void setDistanceFrame(DistanceFrame distanceframe) {
     this.distanceframe = distanceframe;
     }
 
   private FibonacciFrame fibonacciframe;
-
+/**
+makes fibonacci frame object
+*/
   public void setFibonacciFrame(FibonacciFrame fibonacciframe){
     this.fibonacciframe = fibonacciframe;
     }
 
   private BMIFrame bmiframe;
-
+/**
+makes bmi frame object
+*/
   public void setBMIFrame(BMIFrame bmiframe){
     this.bmiframe = bmiframe;
     }
 
   private MusicFrame musicframe;
-
+/**
+makes music frame object
+*/
   public void setMusicFrame(MusicFrame musicframe){
     this.musicframe = musicframe;
   }
@@ -71,6 +81,9 @@ constructor
   }
 
   class AddWeightClassListener implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       JFrame weightframe = new WeightFrame();
       weightframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -82,6 +95,9 @@ constructor
 class logic and button logic (lines 82 - 150)
 */
   class AddDistanceClassListener implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       JFrame distanceframe = new DistanceFrame();
       distanceframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -91,6 +107,9 @@ class logic and button logic (lines 82 - 150)
   }
 
   class AddFibonacciClassListener implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       JFrame fibonacciframe = new FibonacciFrame();
       fibonacciframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -100,6 +119,9 @@ class logic and button logic (lines 82 - 150)
   }
 
   class AddBMIClassListener implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       JFrame bmiframe = new BMIFrame();
       bmiframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -109,6 +131,9 @@ class logic and button logic (lines 82 - 150)
   }
 
   class AddMusicClassListener implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       try {
         JFrame musicframe = new MusicFrame();
@@ -120,31 +145,41 @@ class logic and button logic (lines 82 - 150)
       }
     }
   }
-
+/**
+creates button to calculate weight
+*/
   private void createWeightButton(){
     weightbutton = new JButton("weight converter");
     ActionListener listener = new AddWeightClassListener();
     weightbutton.addActionListener(listener);
   }
-
+/**
+creates button to calculate distance
+*/
   private void createDistanceButton(){
     distancebutton = new JButton("distance converter");
     ActionListener listener = new AddDistanceClassListener();
     distancebutton.addActionListener(listener);
   }
-
+/**
+creates button to calculate fibonacci number
+*/
   private void createFibButton(){
     fibonaccibutton = new JButton("fibonacci calculator");
     ActionListener listener = new AddFibonacciClassListener();
     fibonaccibutton.addActionListener(listener);
   }
-
+/**
+creates button to calculate BMI
+*/
   private void createBMIButton(){
     bmibutton = new JButton("bmi calculator");
     ActionListener listener = new AddBMIClassListener();
     bmibutton.addActionListener(listener);
   }
-
+/**
+creates button to do music stuff
+*/
   private void createMusicButton(){
     musicbutton = new JButton("music player");
     ActionListener listener = new AddMusicClassListener();
