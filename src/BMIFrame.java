@@ -22,7 +22,9 @@ public class BMIFrame extends JFrame implements Interface{
   reference to AllClassesFrame
   */
   private AllClassesFrame allclassesframe;
-
+/**
+makes allclasses object
+*/
   public void setAllClassesFrame(AllClassesFrame allclassesframe){
     this.allclassesframe = allclassesframe;
   }
@@ -88,6 +90,9 @@ public class BMIFrame extends JFrame implements Interface{
   @return BMI
   */
   class AddBMIListener implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       double weight = Double.parseDouble(weightField.getText());
       double height = Double.parseDouble(heightField.getText());
@@ -106,6 +111,9 @@ public class BMIFrame extends JFrame implements Interface{
   }
 
   class GoBack implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       JFrame allclassesframe = new AllClassesFrame();
       allclassesframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
