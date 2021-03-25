@@ -20,7 +20,9 @@ public class MusicFrame extends JFrame{
   reference to AllClassesFrame
   */
   private AllClassesFrame allclassesframe;
-
+/**
+makes allclasses object
+*/
   public void setAllClassesFrame(AllClassesFrame allclassesframe){
     this.allclassesframe = allclassesframe;
   }
@@ -47,30 +49,45 @@ public class MusicFrame extends JFrame{
 button logic (lines 49 - 100) music takes a couple seconds to start playing, song is Confutatis Maledictis from Mozart Requiem, if you upload your own file, make sure it is 16 bit 44100 KHz and also a .wav file
 */
   class AddMusicPlayer implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       clip.start();
     }
   }
 
   class AddMusicStopper implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       clip.stop();
     }
   }
 
   class AddMusicReplayer implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       clip.setMicrosecondPosition(0);
     }
   }
 
   class AddMusicQuitter implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       clip.close();
     }
   }
 
   class GoBack implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       JFrame allclassesframe = new AllClassesFrame();
       allclassesframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
