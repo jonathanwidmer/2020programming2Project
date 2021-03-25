@@ -110,6 +110,7 @@ public class BMIFrame extends JFrame implements Interface{
     }
   }
 /**
+creates button to calculate BMI
 @param button click
 @return BMI
 */
@@ -119,6 +120,7 @@ public class BMIFrame extends JFrame implements Interface{
     button.addActionListener(listener);
   }
 /**
+creates button to go back
 @param button click
 @return AllClassesViewer
 */
