@@ -22,7 +22,9 @@ public class FibonacciFrame extends JFrame implements Interface{
   */
 
   private AllClassesFrame allclassesframe;
-
+/**
+makes allclasses object
+*/
   public void setAllClassesFrame(AllClassesFrame allclassesframe){
     this.allclassesframe = allclassesframe;
   }
@@ -68,6 +70,9 @@ public class FibonacciFrame extends JFrame implements Interface{
   button logic (lines 68 - 108)
   */
   class AddNumberListener implements ActionListener{
+     /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       System.out.println(fibField.getText());
       long number = Long.parseLong(fibField.getText());
@@ -78,6 +83,9 @@ public class FibonacciFrame extends JFrame implements Interface{
   }
 
   class GoBack implements ActionListener{
+     /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       JFrame allclassesframe = new AllClassesFrame();
       allclassesframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -87,6 +95,8 @@ public class FibonacciFrame extends JFrame implements Interface{
   }
 /**
 RECURSIVE METHOD for calculating number in Fibonacci sequence
+@param long number
+@return number in fibonacci sequence
 */
   public static long fib(long number){
       if (number <= 2){
@@ -97,9 +107,7 @@ RECURSIVE METHOD for calculating number in Fibonacci sequence
       }
    }
 /**
-creates button for calculating
-@param button click
-@return number in Fibonacci sequence
+creates button for calculating fibonacci number
 */
    public void createButton(){
      button = new JButton("calculate fibonnaci number");
@@ -108,8 +116,6 @@ creates button for calculating
    }
 /**
 creates button to go back
-@param button click
-@return AllClassesViewer
 */
    public void goBack(){
      back = new JButton("go back");
