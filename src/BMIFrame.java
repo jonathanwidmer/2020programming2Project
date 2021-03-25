@@ -63,6 +63,7 @@ public class BMIFrame extends JFrame implements Interface{
   }
   /**
   creates text field to enter a number into
+  @param user entered number in lbs
   */
   public void createTextField(){
     weightLabel = new JLabel("weight in lbs: ");
@@ -72,6 +73,7 @@ public class BMIFrame extends JFrame implements Interface{
   }
   /**
   creates another text field to enter a number into
+  @param user entered number in inches
   */
   public void createTextField1(){
     heightLabel = new JLabel("height in inches: ");
@@ -82,6 +84,8 @@ public class BMIFrame extends JFrame implements Interface{
 
   /**
   button logic (lines 86 - 123)
+  @param button click
+  @return BMI
   */
   class AddBMIListener implements ActionListener{
     public void actionPerformed(ActionEvent event){
@@ -132,6 +136,7 @@ creates button to go back
 
   /**
   creates visible panel for viewing buttons, text fields, and labels
+  @return visible BMIFrame
   */
   public void createPanel(){
     JPanel panel = new JPanel();
