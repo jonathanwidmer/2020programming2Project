@@ -109,13 +109,19 @@ public class BMIFrame extends JFrame implements Interface{
       allclassesframe.setVisible(true);
     }
   }
-
+/**
+@param button click
+@return BMI
+*/
   public void createButton(){
     button = new JButton("find your bmi");
     ActionListener listener = new AddBMIListener();
     button.addActionListener(listener);
   }
-
+/**
+@param button click
+@return AllClassesViewer
+*/
   public void goBack(){
     back = new JButton("go back");
     ActionListener listener = new GoBack();
