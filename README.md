@@ -8,6 +8,9 @@ This project is for the class AP computer science.
 
 It was hard for me to come up with something to do for this project, so I kind of just made a bunch of calculators/convertors in the form of GUI's. I also made a GUI music player.
 
+## How to navigate this repository
+All source code, pictures and videos of project running, and the sound file are in the src directory. Below are pictures and a video of the project running.
+
 ## Year 2 concepts in this project:
 Recursion is used on the FibonacciFrame.java file in order to find the value of that number in the Fibonacci Sequence. GUI controls like buttons and text fields are used throughout the whole project. An interface is used to supply common methods to the different classes. And the MusicFrame/ Music Player uses file i/o and exception handling.
 
