@@ -96,13 +96,21 @@ RECURSIVE METHOD for calculating number in Fibonacci sequence
         return fib(number - 1) + fib(number - 2);
       }
    }
-
+/**
+creates button for calculating
+@param button click
+@return number in Fibonacci sequence
+*/
    public void createButton(){
      button = new JButton("calculate fibonnaci number");
      ActionListener listener = new AddNumberListener();
      button.addActionListener(listener);
    }
-
+/**
+creates button to go back
+@param button click
+@return AllClassesViewer
+*/
    public void goBack(){
      back = new JButton("go back");
      ActionListener listener = new GoBack();
