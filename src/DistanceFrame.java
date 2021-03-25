@@ -21,7 +21,9 @@ public class DistanceFrame extends JFrame implements Interface{
 reference to AllClassesFrame
 */
   private AllClassesFrame allclassesframe;
-
+/**
+makes allclasses object
+*/
   public void setAllClassesFrame(AllClassesFrame allclassesframe){
     this.allclassesframe = allclassesframe;
   }
@@ -65,6 +67,9 @@ creates text field to enter a number into
 button logic (lines 65 - 92)
 */
   class AddDistanceListener implements ActionListener{
+     /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       double distance = Double.parseDouble(distanceField.getText());
       finalDistance = distance * 5280;
@@ -73,6 +78,9 @@ button logic (lines 65 - 92)
   }
 
   class GoBack implements ActionListener{
+     /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       JFrame allclassesframe = new AllClassesFrame();
       allclassesframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -81,8 +89,7 @@ button logic (lines 65 - 92)
     }
   }
 /**
-@param button click
-@return distance in feet
+creates button to calculate distance
 */
   public void createButton(){
     button = new JButton("Convert miles to feet");
@@ -90,8 +97,7 @@ button logic (lines 65 - 92)
     button.addActionListener(listener);
   }
 /**
-@param button click
-@return AllClassesViewer
+creates button to go back
 */
   public void goBack(){
     back = new JButton("go back");
