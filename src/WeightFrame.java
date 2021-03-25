@@ -21,7 +21,9 @@ public class WeightFrame extends JFrame implements Interface{
   reference to AllClassesFrame
   */
   private AllClassesFrame allclassesframe;
-
+/**
+makes allclasses object
+*/
   public void setAllClassesFrame(AllClassesFrame allclassesframe){
     this.allclassesframe = allclassesframe;
   }
@@ -69,6 +71,9 @@ public class WeightFrame extends JFrame implements Interface{
   button logic (lines 69 - 97)
   */
   class AddWeightListener implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       double weight = Double.parseDouble(weightField.getText());
       finalWeight = weight / 2.205;
@@ -76,6 +81,9 @@ public class WeightFrame extends JFrame implements Interface{
     }
   }
   class GoBack implements ActionListener{
+    /**
+    method for performing action
+    */
     public void actionPerformed(ActionEvent event){
       JFrame allclassesframe = new AllClassesFrame();
       allclassesframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -83,13 +91,17 @@ public class WeightFrame extends JFrame implements Interface{
       allclassesframe.setVisible(true);
     }
   }
-
+/**
+creates button to calculate weight
+*/
   public void createButton(){
     button = new JButton("Convert lbs to kg");
     ActionListener listener = new AddWeightListener();
     button.addActionListener(listener);
   }
-
+/**
+creates button to go back
+*/
   public void goBack(){
     back = new JButton("go back");
     ActionListener listener = new GoBack();
